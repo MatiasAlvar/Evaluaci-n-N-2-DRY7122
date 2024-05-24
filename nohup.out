@@ -1,0 +1,61 @@
+python3: can't open file 'password-evolution.py': [Errno 2] No such file or directory
+ * Serving Flask app "claves" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on https://0.0.0.0:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [24/May/2024 04:27:29] "[37mPOST /signup/v2 HTTP/1.1[0m" 200 -
+127.0.0.1 - - [24/May/2024 04:27:36] "[37mPOST /signup/v2 HTTP/1.1[0m" 200 -
+username:  Matias  password:  clavematias  hash:  89816c334e7311f71c7dcb8871976b93bb451c28efee14d9225f991ea1fb1af5
+username:  Ruben  password:  claveruben  hash:  323dc0d56d52922fc84e9822ff4fa06ddcabe94a1e36fed88032dee665c8cbc5
+ * Serving Flask app "claves" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+Traceback (most recent call last):
+  File "claves.py", line 99, in <module>
+    app.run(host='0.0.0.0', port=5000, ssl_context='adhoc')
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 990, in run
+    run_simple(host, port, self, **options)
+  File "/home/devasc/.local/lib/python3.8/site-packages/werkzeug/serving.py", line 1052, in run_simple
+    inner()
+  File "/home/devasc/.local/lib/python3.8/site-packages/werkzeug/serving.py", line 996, in inner
+    srv = make_server(
+  File "/home/devasc/.local/lib/python3.8/site-packages/werkzeug/serving.py", line 847, in make_server
+    return ThreadedWSGIServer(
+  File "/home/devasc/.local/lib/python3.8/site-packages/werkzeug/serving.py", line 740, in __init__
+    HTTPServer.__init__(self, server_address, handler)
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/http/server.py", line 138, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+ * Serving Flask app "claves" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+Traceback (most recent call last):
+  File "claves.py", line 99, in <module>
+    app.run(host='0.0.0.0', port=5000, ssl_context='adhoc')
+  File "/home/devasc/.local/lib/python3.8/site-packages/flask/app.py", line 990, in run
+    run_simple(host, port, self, **options)
+  File "/home/devasc/.local/lib/python3.8/site-packages/werkzeug/serving.py", line 1052, in run_simple
+    inner()
+  File "/home/devasc/.local/lib/python3.8/site-packages/werkzeug/serving.py", line 996, in inner
+    srv = make_server(
+  File "/home/devasc/.local/lib/python3.8/site-packages/werkzeug/serving.py", line 847, in make_server
+    return ThreadedWSGIServer(
+  File "/home/devasc/.local/lib/python3.8/site-packages/werkzeug/serving.py", line 740, in __init__
+    HTTPServer.__init__(self, server_address, handler)
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/http/server.py", line 138, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
